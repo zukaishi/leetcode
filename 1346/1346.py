@@ -1,4 +1,4 @@
-print("Hello world!")
+print("checkIfExist")
 
 class Solution:
     def checkIfExist(self, arr) -> bool:

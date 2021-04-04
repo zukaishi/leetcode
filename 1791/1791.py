@@ -1,3 +1,5 @@
+print("findCenter")
+
 class Solution:
     def findCenter(self, edges) -> int:
         list = []
