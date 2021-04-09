@@ -2,7 +2,10 @@ print("balancedStringSplit")
 
 class Solution:
     def balancedStringSplit(self, s: str) -> int:
-        return 0
+        num = 0
+        for v in range(len(s)):
+            print(v,s[v])
+        return num
 
 s ="RLRRLLRLRL"
 solution = Solution()
