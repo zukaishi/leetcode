@@ -3,15 +3,19 @@ print("balancedStringSplit")
 class Solution:
     def balancedStringSplit(self, s: str) -> int:
         return_num = 0
-        start = 0
-        for start in range(len(s)):
-            for i in range(1,round(len(s)/2)):
-                num = i+1
-                v = [s[j: j+num] for j in range(start, len(s), num)]
-                print(v)
-                # for v in range(len(s)):
+        r_count = 0
+        l_count = 0
+        for v in s:
+            if v == "R":
+                r_count += 1
+            elif v == "L":
+                l_count += 1
+            if r_count == l_count:
+                return_num += 1
+                r_count =0
+                l_count = 0
         return return_num
 
-s ="RLRRLLRLRL"
+s = "LLLLRRRR"
 solution = Solution()
 print(solution.balancedStringSplit(s))
