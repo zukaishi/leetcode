@@ -15,7 +15,7 @@ class Solution:
                 return_num += v
         return return_num
 
-root = [10,5,15,3,7,null,18]
+root = [10,5,15,3,7,1,18]
 low = 7
 height = 15
 solution = Solution()
