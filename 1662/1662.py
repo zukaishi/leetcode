@@ -2,7 +2,10 @@ print("arrayStringsAreEqual")
 
 class Solution:
     def arrayStringsAreEqual(self, word1,word2) -> bool:
-        return True
+        return_bool = False
+        if ''.join(word1) == ''.join(word2):
+            return_bool = True
+        return return_bool
 
 
 word1 = ["ab", "c"]
