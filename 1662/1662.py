@@ -7,7 +7,6 @@ class Solution:
             return_bool = True
         return return_bool
 
-
 word1 = ["ab", "c"]
 word2 = ["a", "bc"]
 solution = Solution()
