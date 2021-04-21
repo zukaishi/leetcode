@@ -2,7 +2,16 @@ print("maximum69Number")
 
 class Solution:
     def maximum69Number (self, num: int) -> int:
-        return 0
+        max = num
+        str_num = str(num)
+        for i in range(0,len(str_num)):
+            n = num
+            x = 1 if i == len(str_num) else 10 ** (len(str_num)-1 - i)
+            y = 3 if str_num[i] == "6" else -3
+            n += x*y
+            if n > max:
+                max = n
+        return max
 
 solution = Solution()
-print(solution.maximum69Number(9669))
+print(solution.maximum69Number(9999))
