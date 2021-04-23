@@ -8,7 +8,7 @@ class Solution:
         n = 0
         for i in range(0,len(mat)):
             x_max = len(mat) -1
-            for j in range(0,len(mat[i])):
+            for _ in range(0,len(mat[i])):
                 xx = x_max -x
                 n += mat[x][y]
                 mat[x][y] = 0
