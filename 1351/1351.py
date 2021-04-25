@@ -4,6 +4,10 @@ print("countNegatives")
 class Solution:
     def countNegatives(self, grid: List[List[int]]) -> int:
         num = 0
+        for v in grid:
+            for v2 in v:
+                if v2 < 0:
+                    num += 1
         return num
 
 
