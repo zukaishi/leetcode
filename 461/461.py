@@ -2,8 +2,7 @@ print("hammingDistance")
 
 class Solution:
     def hammingDistance(self, x: int, y: int) -> int:
-        r = 0
-        return r
+        return str(bin(x^y)).count("1")
 
 solution = Solution()
-print(solution.hammingDistance(1, 4))
+print(solution.hammingDistance(93, 73))
